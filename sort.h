@@ -16,10 +16,11 @@
  */
 typedef struct listint_s
 {
-    const int n;
-    struct listint_s *prev;
-    struct listint_s *next;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
 } listint_t;
+
 /* Function prototype of given functions */
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
@@ -31,5 +32,9 @@ void swap(int *x, int *y);
 
 	/* Insertion sort prototype */
 void insertion_sort_list(listint_t **list);
+
+	/* Selection sort prototype */
+void selection_sort(int *array, size_t size);
+
 
 #endif /*BISKIT_SORT_H */
