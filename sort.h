@@ -41,4 +41,8 @@ void sortfast(int *array, ssize_t low, ssize_t high, size_t size);
 void swap(int *x, int *y);
 void quick_sort(int *array, size_t size);
 
+	/* Shell sort using Knuth sequence */
+void shell_sort(int *array, size_t size);
+
+
 #endif /*BISKIT_SORT_H */
