@@ -36,5 +36,9 @@ void insertion_sort_list(listint_t **list);
 	/* Selection sort prototype */
 void selection_sort(int *array, size_t size);
 
+	/* quick sort prototypes */
+void sortfast(int *array, ssize_t low, ssize_t high, size_t size);
+void swap(int *x, int *y);
+void quick_sort(int *array, size_t size);
 
 #endif /*BISKIT_SORT_H */
