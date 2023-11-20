@@ -48,5 +48,9 @@ void shell_sort(int *array, size_t size);
 void swapN(listint_t **list, listint_t *x, listint_t *y);
 void cocktail_sort_list(listint_t **list);
 
+	/* counting sort */
+void counting_sort(int *array, size_t size);
+int maxV_find(int *array, int size);
+
 
 #endif /*BISKIT_SORT_H */
