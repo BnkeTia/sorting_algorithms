@@ -45,7 +45,7 @@ void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
 
 	/* cocktail shaker sort algo prototypes */
-void swapN(listint_t **list, listint_t *x, listint_t y);
+void swapN(listint_t **list, listint_t *x, listint_t *y);
 void cocktail_sort_list(listint_t **list);
 
 

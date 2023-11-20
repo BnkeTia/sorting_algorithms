@@ -7,7 +7,7 @@
  * @y: pointer to the second element to be swapped.
  * Return: void.
  */
-void swapN(listint_t **list, listint_t *x, listint_t y)
+void swapN(listint_t **list, listint_t *x, listint_t *y)
 {
 	if (x->prev)
 		x->prev->next = y;
@@ -43,7 +43,7 @@ void swapN(listint_t **list, listint_t *x, listint_t y)
 	}
 	if (!x->prev)
 		*list = x;
-	else if (!b->prev)
+	else if (!y->prev)
 		*list = y;
 }
 
@@ -57,7 +57,7 @@ void cocktail_sort_list(listint_t **list)
 {
 	int isSorted;
 	listint_t *p;
-	listint_t *left, right = NULL;
+	listint_t *left, *right = NULL;
 
 	if (*list == NULL)
 		return;
